@@ -1,0 +1,16 @@
+<form action="{{ url_for('predict')}}" method="post">
+    <p>GP</p>
+     <input type="number" name="GP" placeholder="Enter GP" 			  		required="required" /><br> 
+    <p>FG%</p>
+     <input type="number" name="FG%" placeholder="Enter FG%" 			  		required="required" /><br> 
+    <p>3P Made</p>
+     <input type="number" name="3P Made" placeholder="Enter 3P Made" 			  		required="required" /><br> 
+    <p>FT%</p>
+     <input type="number" name="FT%" placeholder="Enter FT%" 			  		required="required" /><br> 
+    <p>REB</p>
+     <input type="number" name="REB" placeholder="Enter REB" 			  		required="required" /><br> 
+    <p>AST</p>
+     <input type="number" name="AST" placeholder="Enter AST" 			  		required="required" /><br> 
+     <button type="submit">Predict</button>
+</form>
+<p> {{ prediction }} </p>
